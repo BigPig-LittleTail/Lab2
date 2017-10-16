@@ -1,5 +1,5 @@
 package com.yiibai.struts2;
-
+//this is changed area.
 import com.opensymphony.xwork2.ActionContext;
 
 public class AddAuthorAction {

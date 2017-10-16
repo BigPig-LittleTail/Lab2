@@ -1,5 +1,5 @@
 package com.yiibai.struts2;
-
+//this is the second changed area 
 import java.sql.ResultSet;
 
 import com.opensymphony.xwork2.ActionContext;

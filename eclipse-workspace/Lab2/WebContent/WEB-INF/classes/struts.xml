@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+   <package name="Search" extends="struts-default">
+
+      <action name="searchresult" 
+            class= "com.yiibai.struts2.SearchResultAction"
+            method="execute">
+            <result name="success">/searchresult.jsp</result>
+      </action>
+      <action name="bookdetails" 
+            class= "com.yiibai.struts2.BookDetailsAction"
+            method="execute">
+            <result name="success">/bookdetails.jsp</result>
+      </action>
+      
+       <action name="delete" 
+            class= "com.yiibai.struts2.DeleteAction"
+            method="delete">
+            <result name="success">/deleteresult.jsp</result>
+      </action>
+      
+      <action name="returnhome" 
+            class= "com.yiibai.struts2.ReturnHomeAction"
+            method="execute">
+            <result name="success">/welcome.jsp</result>
+      </action>
+      
+      <action name="allbooks" 
+            class= "com.yiibai.struts2.ShowAllBookAction"
+            method="execute">
+            <result name="success">/allbooks.jsp</result>
+      </action>
+      
+      <action name="addbook" 
+            class= "com.yiibai.struts2.AddBookAction"
+            method="execute">
+            <result name="success">/allresult.jsp</result>
+            <result name="author_not_exist">/addauthor.jsp</result>
+      </action>
+      <action name="addauthor" 
+            class= "com.yiibai.struts2.AddAuthorAction"
+            method="execute">
+            <result name="success">/allresult.jsp</result>
+      </action>
+      <action name="update" 
+            class= "com.yiibai.struts2.ShowAllBookAction"
+            method="execute">
+            <result name="success">/update.jsp</result>
+      </action>
+      <action name="submitupdate" 
+            class= "com.yiibai.struts2.UpdateAction"
+            method="execute">
+            <result name="success">/allresult.jsp</result>
+      </action>
+   </package>
+</struts>
